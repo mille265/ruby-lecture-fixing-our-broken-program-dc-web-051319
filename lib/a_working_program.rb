@@ -1,4 +1,9 @@
-puts Hello World! # Correct this to "Hello World!"
+describe 'A working program' do
 
-# Your entire program should read:
-# puts "Hello_World!"
+  it 'not to raise an error when loaded' do
+    expect{
+      load 'lib/a_working_program.rb'
+    }.to_not raise_error
+  end
+
+end
